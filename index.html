@@ -5,64 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Hello!</title>
+    <title>Home | Andy Warhol Tribute</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+
+    <!-- import the icons from font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <h1>Hi there!</h1>
-
-    <p>
-      Go to the <a href="/about.html">About</a> page
-    </p>
-    
-    <p>
-      Go to the <a href="#section2">Section 2</a> in this page
-    </p>
-    
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius, erat
-      ut vulputate gravida, felis arcu laoreet lacus, ac venenatis mauris magna
-      vel quam. Maecenas sit amet viverra lacus, ac auctor dui. Maecenas varius
-      nibh quis nisl vestibulum placerat. Nullam ornare vulputate odio, in
-      consequat ligula ullamcorper ac. Vivamus vitae urna sit amet sem suscipit
-      sodales. Nunc pulvinar sapien mattis convallis elementum. Etiam in
-      consectetur arcu. Vestibulum pretium tellus in commodo mattis. Vestibulum
-      fermentum convallis eleifend. Quisque pretium lacinia tincidunt.
-      Vestibulum consequat scelerisque placerat. Sed a vehicula metus.
-      Vestibulum interdum posuere ante id pulvinar. Ut eleifend et sapien vel
-      fringilla. Suspendisse vitae fringilla urna. Vivamus venenatis cursus
-      turpis, vel ultricies ante porttitor id. Praesent sagittis nibh eu lectus
-      sodales tincidunt in quis purus. Nulla lacinia magna eu laoreet pulvinar.
-    </p>
-    
-    <h2 id="section2">Section 2</h2>
-    
-    <p>
-      Vestibulum eleifend vestibulum sapien id efficitur. In bibendum justo
-      vitae risus varius interdum ut a sem. Proin ante dui, euismod sed blandit
-      sed, dictum id lorem. Vivamus sed rhoncus risus. Quisque ullamcorper
-      iaculis sapien nec gravida. Interdum et malesuada fames ac ante ipsum
-      primis in faucibus. Sed eget massa non tortor vulputate eleifend.
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-      cubilia curae; Aenean lacus dolor, aliquam sed porta convallis, elementum
-      vitae nisl. Curabitur dignissim finibus felis, commodo volutpat odio
-      tristique eget. Pellentesque habitant morbi tristique senectus et netus et
-      malesuada fames ac turpis egestas. Quisque at felis urna.
-    </p>
-
-    <p>
-      I'm your cool new webpage. Made with
-      <a href="https://glitch.com" target="_blank">Glitch</a>!
-    </p>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <!-- TOP NAVIGATION START -->
+    <div class="header">
+      <center><b>ANDY WARHOL TRIBUTE</b></center>
+    </div>
+    <div class="topnav">
+      <a href="/index.html"><i class="fa fa-home fa-lg"></i> HOME</a>
+      <a href="/about.html"><i class="fa fa-user fa-lg"></i> ABOUT ARTIST</a>
+      <a href="/artwork.html"><i class="fa fa-image fa-lg"></i> ARTWORK</a>
+      <a href="/community.html"><i class="fa fa-image fa-lg"></i> COMMUNITY</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <!-- TOP NAVIGATION END -->
+    <!-- HERO IMAGE START -->
+    <div class="hero-image-index">
+      <div class="hero-text">
+        <h1>ANDY WARHOL </h1>
+        <p>
+          An American artist, film director, and producer<br>
+          who was a leading figure in the visual art movement which is also known as pop art.
+        </p>
+      </div>
+    </div>
+     <!-- HERO IMAGE END -->
+    <!-- MEATBALL MENU START -->
+    <center>
+      <h2>- GET STARTED -</h2>
+      <p>Start exploing the Website to know about <b>Andy Warhol</b>.</p>
+      <br />
+      <div class="meatball-menu">
+        <div class="column-3">
+          <!-- BIOGRAPHY CARD START-->
+          <div class="card">
+            <a href="/about.html">
+              <img
+                src="https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2FPlaceHolder.png?v=1604757146381"
+                style="width:100%"
+              />
+              <div class="card-title">
+                <i class="fa fa-user fa-lg"></i>
+                <b>BIOGRAPHY</b>
+              </div>
+              <div class="card-container">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="column-3">
+          <!-- BIOGRAPHY CARD END -->
+          <!-- ARTWORKS CARD START -->
+          <div class="card">
+            <a href="/artwork.html">
+              <img
+                src="https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2FPlaceHolder.png?v=1604757146381"
+                style="width:100%"
+              />
+              <div class="card-title">
+                <i class="fa fa-image fa-lg"></i>
+                <b>ARTWORKS</b>
+              </div>
+              <div class="card-container">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="column-3">
+          <!-- ARTWORKS CARD END -->
+          <!-- COMMUNITY CARD START -->
+          <div class="card">
+            <a href="/community.html">
+              <img
+                src="https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2FPlaceHolder.png?v=1604757146381"
+                style="width:100%"
+              />
+              <div class="card-title">
+                <i class="fa fa-users fa-lg"></i>
+                <b>COMMUNITY</b>
+              </div>
+              <div class="card-container">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </center>
+    <!-- COMMUNITY CARD END -->
+    <!-- MEATBALL MENU END -->
+    <!-- FOOTER START -->
+    <br />
+    <div class="footer">
+      <div class="row">
+        <div class="column-footer1">
+          <p>
+            <i class="fa fa-globe fa-lg"></i><b> About the Website</b>
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
+            erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
+            mauris magna vel quam.<a href="/acknowledgement.html">ACKNOWLEGEMENT</a>
+          </p>
+        </div>
+        <div class="column-footer2">
+          <p>
+            <b>Follow Us!</b>
+            <br />
+            <br />
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter-square"></i>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <h2>ANDY WARHOL TRIBUTE</h2>
+        <h6>Created in November 2020</h6>
+      </div>
+    </div>
+    <!-- FOOTE END -->
   </body>
 </html>

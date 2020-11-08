@@ -5,100 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>About</title>
+    <title>Biography | Andy Warhol Tribute</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+
+    <!-- import the icons from font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <h1>Hi there!</h1>
-
-    <p>Go to the <a href="/index.html">Index</a> page</p>
-
-    <table style="width:80%">
-      <tr>
-        <th>Name</th>
-        <th colspan="2">Telephone</th>
-      </tr>
-      <tr>
-        <td>Bill Gates</td>
-        <td>55577854</td>
-        <td>55577855</td>
-      </tr>
-      <tr>
-        <td>Konald Trunp</td>
-        <td>12345678</td>
-        <td>87654321</td>
-      </tr>
-    </table>
-
-    <br />
-
-    <table style="width:80%">
-      <tr>
-        <th>Name:</th>
-        <td>Bill Gates</td>
-        <td>Jim Kong Um</td>
-      </tr>
-      <tr>
-        <th rowspan="2">Telephone:</th>
-        <td>55577854</td>
-        <td>96325874</td>
-      </tr>
-      <tr>
-        <td>55577855</td>
-        <td>74125896</td>
-      </tr>
-    </table>
-
-    <br />
-
-    <table
-      align="right"
-      style="width:20%"
-    >
-      <!--Name-->
-      <tr>
-        <th colspan="2" text-align="center">Andy Warhol</th>
-      </tr>
-      <!--Picture-->
-      <tr>
-        <td colspan="2" text-align="center">
-        <img src="https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2FAndy_Warhol_1975.jpg?v=1604457619454" width="200px" img-align="center">
-        </td>
-      </tr>
-      <!--Born-->
-      <tr>
-        <th rowspan="2">Born</th>
-        <td>August 6, 1928</td>
-      </tr>
-      <tr>
-        <td>Pittsburgh, Pennsylvania, U.S.</td>
-      </tr>
-      <!--Died-->
-      <tr>
-        <th rowspan="2">Died</th>
-        <td>February 22, 1987 (aged 58)</td>
-      </tr>
-      <tr>
-        <td>New York City, U.S.</td>
-      </tr>
-    </table>
-  
-    
-    
-    
+    <!-- TOP NAVIGATION START -->
+    <div class="header">
+      <center><b>ANDY WARHOL TRIBUTE</b></center>
+    </div>
+    <div class="topnav">
+      <a href="/index.html"><i class="fa fa-home fa-lg"></i> HOME</a>
+      <a href="/about.html"><i class="fa fa-user fa-lg"></i> ABOUT ARTIST</a>
+      <a href="/artwork.html"><i class="fa fa-image fa-lg"></i> ARTWORK</a>
+      <a href="/community.html"><i class="fa fa-image fa-lg"></i> COMMUNITY</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <!-- TOP NAVIGATION END -->
+    <!-- HERO IMAGE START -->
+    <div class="hero-image-index">
+      <div class="hero-text">
+        <h1>BIOGRAPHY</h1>
+      </div>
+    </div>
+    <!-- HERO IMAGE END -->
     <p>
-      I'm your cool new webpage. Made with
-      <a href="https://glitch.com" traget="_blank">Glitch</a>!
+      <b>Andy Wahol</b>
+      was an American artist, film director, and producer who was a leading
+      figure in the visual art movement which is alsoknown as pop art. His works
+      explore the relationship between artistic expression, advertising, and
+      celebrity culture that flourished by the 1960s, and span a variety of
+      media, including painting, silkscreening, photography, film, and
+      sculpture.
+      <br />
+      <br />
+      <b>Click on the tab with its name to view its respective content:</b>
     </p>
+    <div class="meatball-menu">
+      <div class="tab">
+        <button
+          class="tablinks"
+          onclick="openCity(event, '1960s')"
+          id="defaultOpen"
+        >
+          1960s
+        </button>
+        <button class="tablinks" onclick="openCity(event, '1970s')">
+          1970s
+        </button>
+        <button class="tablinks" onclick="openCity(event, '1980s')">
+          1980s
+        </button>
+      </div>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+      <div id="1960s" class="tabcontent2">
+        <h3>1960s</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
+          erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
+          mauris magna vel quam. Maecenas sit amet viverra lacus, ac auctor dui.
+          Maecenas varius nibh quis nisl vestibulum placerat.
+        </p>
+      </div>
+
+      <div id="1970s" class="tabcontent2">
+        <h3>1970s</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
+          erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
+          mauris magna vel quam. Maecenas sit amet viverra lacus, ac auctor dui.
+          Maecenas varius nibh quis nisl vestibulum placerat.
+        </p>
+      </div>
+
+      <div id="1980s" class="tabcontent2">
+        <h3>1980s</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
+          erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
+          mauris magna vel quam. Maecenas sit amet viverra lacus, ac auctor dui.
+          Maecenas varius nibh quis nisl vestibulum placerat.
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER START -->
+    <br />
+    <div class="footer">
+      <div class="row">
+        <div class="column-footer1">
+          <p>
+            <i class="fa fa-globe fa-lg"></i><b> About the Website</b>
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
+            erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
+            mauris magna vel quam.
+            <a href="/acknowledgement.html">ACKNOWLEGEMENT</a>
+          </p>
+        </div>
+        <div class="column-footer2">
+          <p>
+            <b>Follow Us!</b>
+            <br />
+            <br />
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter-square"></i>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <h2>ANDY WARHOL TRIBUTE</h2>
+        <h6>Created in November 2020</h6>
+      </div>
+    </div>
+    <!-- FOOTER END -->
   </body>
 </html>
