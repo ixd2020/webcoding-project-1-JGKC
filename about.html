@@ -9,6 +9,9 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/Navigation.css" />
+    <link rel="stylesheet" href="/HeroImages.css" />
+    <link rel="stylesheet" href="/Footer.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -18,24 +21,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- import the font from google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- TOP NAVIGATION START -->
-    <div class="header">
+    <header class="header">
       <center><b>ANDY WARHOL TRIBUTE</b></center>
-    </div>
-    <div class="topnav">
+    </header>
+    <nav class="topnav">
       <a href="/index.html"><i class="fa fa-home fa-lg"></i> HOME</a>
-      <a href="/about.html"><i class="fa fa-user fa-lg"></i> ABOUT ARTIST</a>
+      <a href="/about.html"><i class="fa fa-user fa-lg"></i> BIOGRAPHY</a>
       <a href="/artwork.html"><i class="fa fa-image fa-lg"></i> ARTWORK</a>
-      <a href="/community.html"><i class="fa fa-image fa-lg"></i> COMMUNITY</a>
+      <a href="/community.html"><i class="fa fa-users fa-lg"></i> COMMUNITY</a>
       <div class="search-container">
         <form action="/action_page.php">
           <input type="text" placeholder="Search" />
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>
-    </div>
+    </nav>
     <!-- TOP NAVIGATION END -->
     <!-- HERO IMAGE START -->
     <div class="hero-image-index">
@@ -60,15 +69,15 @@
       <div class="tab">
         <button
           class="tablinks"
-          onclick="openCity(event, '1960s')"
+          onclick="openYear(event, '1960s')"
           id="defaultOpen"
         >
           1960s
         </button>
-        <button class="tablinks" onclick="openCity(event, '1970s')">
+        <button class="tablinks" onclick="openYear(event, '1970s')">
           1970s
         </button>
-        <button class="tablinks" onclick="openCity(event, '1980s')">
+        <button class="tablinks" onclick="openYear(event, '1980s')">
           1980s
         </button>
       </div>
@@ -106,7 +115,7 @@
 
     <!-- FOOTER START -->
     <br />
-    <div class="footer">
+    <footer class="footer">
       <div class="row">
         <div class="column-footer1">
           <p>
@@ -133,7 +142,7 @@
         <h2>ANDY WARHOL TRIBUTE</h2>
         <h6>Created in November 2020</h6>
       </div>
-    </div>
+    </footer>
     <!-- FOOTER END -->
   </body>
 </html>

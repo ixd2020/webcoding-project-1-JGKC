@@ -9,6 +9,9 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/Navigation.css" />
+    <link rel="stylesheet" href="/HeroImages.css" />
+    <link rel="stylesheet" href="/Footer.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -18,24 +21,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- import the font from google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- TOP NAVIGATION START -->
-    <div class="header">
+    <header class="header">
       <center><b>ANDY WARHOL TRIBUTE</b></center>
-    </div>
-    <div class="topnav">
+    </header>
+    <nav class="topnav">
       <a href="/index.html"><i class="fa fa-home fa-lg"></i> HOME</a>
-      <a href="/about.html"><i class="fa fa-user fa-lg"></i> ABOUT ARTIST</a>
+      <a href="/about.html"><i class="fa fa-user fa-lg"></i> BIOGRAPHY</a>
       <a href="/artwork.html"><i class="fa fa-image fa-lg"></i> ARTWORK</a>
-      <a href="/community.html"><i class="fa fa-image fa-lg"></i> COMMUNITY</a>
+      <a href="/community.html"><i class="fa fa-users fa-lg"></i> COMMUNITY</a>
       <div class="search-container">
         <form action="/action_page.php">
           <input type="text" placeholder="Search" />
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>
-    </div>
+    </nav>
     <!-- TOP NAVIGATION END -->
     <!-- HERO IMAGE START -->
     <div class="hero-image-acknowledgement">
@@ -138,34 +147,36 @@
     </p>
 
     <!-- FOOTER START -->
-      <br />
-      <div class="footer">
-        <div class="row">
-          <div class="column-footer1">
-            <p>
-              <i class="fa fa-globe fa-lg"></i><b> About the Website</b>
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              varius, erat ut vulputate gravida, felis arcu laoreet lacus, ac
-              venenatis mauris magna vel quam.<a href="/acknowledgement.html">ACKNOWLEGEMENT</a>
-            </p>
-          </div>
-          <div class="column-footer2">
-            <p>
-              <b>Follow Us!</b>
-              <br />
-              <br />
-              <i class="fa fa-facebook-square"></i>
-              <i class="fa fa-twitter-square"></i>
-            </p>
-          </div>
+    <br />
+    <footer class="footer">
+      <div class="row">
+        <div class="column-footer1">
+          <p>
+            <i class="fa fa-globe fa-lg"></i><b> About the Website</b>
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
+            erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
+            mauris magna vel quam.<a href="/acknowledgement.html"
+              >ACKNOWLEGEMENT</a
+            >
+          </p>
         </div>
-        <div class="row">
-          <h2>ANDY WARHOL TRIBUTE</h2>
-          <h6>Created in November 2020</h6>
+        <div class="column-footer2">
+          <p>
+            <b>Follow Us!</b>
+            <br />
+            <br />
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter-square"></i>
+          </p>
         </div>
       </div>
+      <div class="row">
+        <h2>ANDY WARHOL TRIBUTE</h2>
+        <h6>Created in November 2020</h6>
+      </div>
+    </footer>
     <!-- FOOTER END -->
   </body>
 </html>

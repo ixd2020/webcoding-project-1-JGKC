@@ -23,7 +23,7 @@ function openPage(pageName,elmnt,color) {
 
 
 // ABOUT.html - TABS
-function openCity(evt, cityName) {
+function openYear(evt, Year) {
   var i, tabcontent2, tablinks;
   tabcontent2 = document.getElementsByClassName("tabcontent2");
   for (i = 0; i < tabcontent2.length; i++) {
@@ -33,7 +33,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(Year).style.display = "block";
   evt.currentTarget.className += " active";
 }
 

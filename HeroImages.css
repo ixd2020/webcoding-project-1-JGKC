@@ -1,0 +1,63 @@
+/* ------ INDEX.html HERO IMAGE START ----- */
+.hero-image-index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2FAndy%20Camera.jpg?v=1604811880686");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* ------ COMMNUNITY.html HERO IMAGE ----- */
+.hero-image-community {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2Fpexels-fauxels-3184418.jpg?v=1604820960983");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ------ ARTWORK.html HERO IMAGE ----- */
+.hero-image-artwork {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2Fpexels-cottonbro-4067756.jpg?v=1604828521904");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ------ ACKNOWlEDGEMENT.html HERO IMAGE ----- */
+.hero-image-acknowledgement {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2Fpexels-giftpunditscom-2072165.jpg?v=1604829342001");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ------ CAMPBELL.html HERO IMAGE ----- */
+.hero-image-campbell {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2FCampbell%20Soup.jpg?v=1604829724252");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

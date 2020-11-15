@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Community Login | Andy Warhol Tribute </title>
+    <title>Community Login | Andy Warhol Tribute</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/Navigation.css" />
+    <link rel="stylesheet" href="/HeroImages.css" />
+    <link rel="stylesheet" href="/Footer.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -18,24 +21,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- import the font from google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- TOP NAVIGATION START -->
-    <div class="header">
+    <header class="header">
       <center><b>ANDY WARHOL TRIBUTE</b></center>
-    </div>
-    <div class="topnav">
+    </header>
+    <nav class="topnav">
       <a href="/index.html"><i class="fa fa-home fa-lg"></i> HOME</a>
-      <a href="/about.html"><i class="fa fa-user fa-lg"></i> ABOUT ARTIST</a>
+      <a href="/about.html"><i class="fa fa-user fa-lg"></i> BIOGRAPHY</a>
       <a href="/artwork.html"><i class="fa fa-image fa-lg"></i> ARTWORK</a>
-      <a href="/community.html"><i class="fa fa-image fa-lg"></i> COMMUNITY</a>
+      <a href="/community.html"><i class="fa fa-users fa-lg"></i> COMMUNITY</a>
       <div class="search-container">
         <form action="/action_page.php">
           <input type="text" placeholder="Search" />
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>
-    </div>
+    </nav>
     <!-- TOP NAVIGATION END -->
     <!-- HERO IMAGE START -->
     <div class="hero-image-community">
@@ -62,72 +71,81 @@
     </button>
     <!-- LOGIN -->
     <div id="LogIn" class="tabcontent">
-      <h3>LOG IN</h3>
-      <div class="InputDetails">
-        <form action="/action_page.php">
-          <label for="fname">Username</label><br />
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Username"
-          /><br />
+      <div class="formbox">
+        <h3>LOG IN</h3>
+        <div class="InputDetails">
+          <form action="/action_page.php">
+            <label for="fname">Username</label><br />
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+            /><br />
 
-          <label for="lname">Password</label><br />
-          <input
-            type="Password"
-            id="Password"
-            name="Password"
-            placeholder="Password"
-          /><br />
+            <label for="lname">Password</label><br />
+            <input
+              type="Password"
+              id="Password"
+              name="Password"
+              placeholder="Password"
+            /><br />
 
-          <input type="submit" value="Log In" />
-        </form>
+            <input type="submit" value="Log In" />
+          </form>
+        </div>
       </div>
     </div>
+
     <!-- LOGIN END -->
     <!-- SIGNUP START -->
     <div id="SignUp" class="tabcontent">
-      <h3>SIGN UP</h3>
-      <div class="InputDetails">
-        <form action="/action_page.php">
-          <label for="fname">Email</label><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-          /><br />
+      <div class="formbox">
+        <h3>SIGN UP</h3>
+        <div class="InputDetails">
+          <form action="/action_page.php">
+            <label for="fname">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+            /><br />
 
-          <label for="fname">Username</label><br />
-          <input
-            type="text"
-            id="newusername"
-            name="username"
-            placeholder="Username"
-          /><br />
+            <label for="fname">Username</label><br />
+            <input
+              type="text"
+              id="newusername"
+              name="username"
+              placeholder="Username"
+            /><br />
 
-          <label for="lname">Password</label><br />
-          <input
-            type="Password"
-            id="newPassword"
-            name="Password"
-            placeholder="Password"
-          /><br />
+            <label for="lname">Password</label><br />
+            <input
+              type="Password"
+              id="newPassword"
+              name="Password"
+              placeholder="Password"
+            /><br />
 
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-          <label for="vehicle1"> I would like to recieve Newsletter</label
-          ><br />
+            <input type="checkbox" id="news" name="news" value="Bike" />
+            <label for="news"> I would like to recieve Newsletter.</label><br />
 
-          <input type="submit" value="Sign Up" />
-        </form>
+            <input type="radio" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1">
+              I agree with the <a href="">Terms & Conditions</a>.</label
+            ><br /><br />
+
+            <input type="submit" value="Sign Up" />
+          </form>
+        </div>
       </div>
-      <!-- SIGNUP END -->
     </div>
+    <!-- SIGNUP END -->
     <!-- TAB END -->
     <!-- FOOTER START -->
     <br />
-    <div class="footer">
+    <footer class="footer">
       <div class="row">
         <div class="column-footer1">
           <p>
@@ -155,7 +173,7 @@
         <h2>ANDY WARHOL TRIBUTE</h2>
         <h6>Created in November 2020</h6>
       </div>
-    </div>
+      </footer>
     <!-- FOOTER END -->
   </body>
 </html>

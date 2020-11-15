@@ -1,0 +1,67 @@
+.card {
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+.card :hover {
+  background-color: #ddd;
+  color: black;
+  animation-name: pop;
+}
+
+
+
+.card-text {
+  background-color: rgba(51, 51, 61, 0.7);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 50px;
+}
+
+.card-bio {
+  background-image: url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2F3041418012_4a06b4034b_b.jpg?v=1605431973560");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-art {
+  background-image: url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2Fartwork-mao.jpg?v=1605428446758");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-com {
+  background-image: url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2Fpexels-pixabay-461049.jpg?v=1605431795910");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
