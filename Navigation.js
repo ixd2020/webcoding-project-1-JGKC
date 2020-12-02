@@ -7,12 +7,14 @@ function Menu() {
   }
 }
 
-
 function Search() {
+  console.log("searchclick");
   var x = document.getElementById("search");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  if (x.style.display === "block") {
+    console.log("displayblock");
     x.style.display = "none";
+  } else {
+    console.log("displaynone");
+    x.style.display = "block";
   }
 }

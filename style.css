@@ -1,6 +1,6 @@
 /* CSS files add styling rules to your content */
 * {
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   box-sizing: border-box;
 }
 
@@ -12,7 +12,7 @@
 
 /* Defualt Container */
 .container {
-  margin:auto;
+  margin: auto;
   width: 90%;
 }
 
@@ -34,26 +34,27 @@ h3 {
 }
 
 p {
-  margin:2em;
-  font-family: 'Raleway', sans-serif;
+  margin: 2em;
+  font-family: "Raleway", sans-serif;
 }
 
-body,html{
+body,
+html {
   margin: 0;
   height: 100%;
 }
 
 /* Table of Contents */
 .content-box {
-  margin:2em;
+  margin: 2em;
   border: 1px solid black;
   width: 400px;
-  padding:10px
+  padding: 10px;
 }
 
 .content-list1 {
-  width:100%;
-  margin:1em;
+  width: 100%;
+  margin: 1em;
 }
 
 @media screen and (max-width: 500px) {
@@ -65,7 +66,6 @@ body,html{
 
 /* Columns */
 
-
 @media screen and (max-width: 800px) {
   .column-3 {
     width: 100%;
@@ -73,10 +73,6 @@ body,html{
     margin-bottom: 20px;
   }
 }
-
-
-
-
 
 .column-2 {
   float: left;
@@ -130,7 +126,7 @@ body,html{
 }
 
 .formbox {
-  width:50%;
+  width: 50%;
   margin: auto;
 }
 
@@ -160,7 +156,6 @@ input[type="email"] {
 .InputDetails [type="submit"]:hover {
   background-color: #45a049;
 }
-
 
 /* ABOUT.html TABS */
 .tab {
@@ -201,6 +196,22 @@ input[type="email"] {
   border-left: none;
   height: 300px;
   background-color: #f1f1f1;
-  
+}
 
-  
+/**/
+.box1 {
+  width: 25%;
+  height: 100px;
+  border: 1px solid black;
+  float:left
+}
+.box2 {
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  float:left
+}
+
+.content {
+  background-color: tomato;
+}
