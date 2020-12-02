@@ -11,10 +11,17 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/Navigation.css" />
     <link rel="stylesheet" href="/HeroImages.css" />
+    <link rel="stylesheet" href="/About.css" />
     <link rel="stylesheet" href="/Footer.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="/Navigation.js" defer></script>
+    <script src="/About.js" defer></script>
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=ee298ef23e7fd7634"
+    ></script>
 
     <!-- import the icons from font awesome -->
     <link
@@ -33,112 +40,223 @@
     <header class="header">
       <center><b>ANDY WARHOL TRIBUTE</b></center>
     </header>
-    <nav class="topnav">
+    <nav class="topnav" id="topnav">
       <a href="/index.html"><i class="fa fa-home fa-lg"></i> HOME</a>
-      <a href="/about.html"><i class="fa fa-user fa-lg"></i> BIOGRAPHY</a>
+      <a href="/about.html" class="active"
+        ><i class="fa fa-user fa-lg"></i> BIOGRAPHY</a
+      >
       <a href="/artwork.html"><i class="fa fa-image fa-lg"></i> ARTWORK</a>
       <a href="/community.html"><i class="fa fa-users fa-lg"></i> COMMUNITY</a>
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search" />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+      <!-- LOGO ONLY -->
+      <a href="/index.html" class=" icon">
+        <i class="fa fa-home fa-lg"></i>
+      </a>
+      <a href="/about.html" class="active icon">
+        <i class="fa fa-user fa-lg"></i>
+      </a>
+      <a href="/artwork.html" class="icon">
+        <i class="fa fa-image fa-lg"></i>
+      </a>
+      <a href="/community.html" class="icon">
+        <i class="fa fa-users fa-lg"></i>
+      </a>
+      <!-- SEARCH -->
+      <a style="float: right;" onclick="Search()" class="search">
+        <i class="fa fa-search fa-lg" id="SearchButton"></i>
+      </a>
+      <div class="search-container" id="search">
+        <div class="clearfix"></div>
+        <div class="gcse-search"></div>
       </div>
     </nav>
     <!-- TOP NAVIGATION END -->
+
     <!-- HERO IMAGE START -->
-    <div class="hero-image-index">
+    <div class="hero-image-about">
       <div class="hero-text">
         <h1>BIOGRAPHY</h1>
       </div>
     </div>
     <!-- HERO IMAGE END -->
-    <p>
-      <b>Andy Wahol</b>
-      was an American artist, film director, and producer who was a leading
-      figure in the visual art movement which is alsoknown as pop art. His works
-      explore the relationship between artistic expression, advertising, and
-      celebrity culture that flourished by the 1960s, and span a variety of
-      media, including painting, silkscreening, photography, film, and
-      sculpture.
-      <br />
-      <br />
-      <b>Click on the tab with its name to view its respective content:</b>
-    </p>
-    <div class="meatball-menu">
-      <div class="tab">
-        <button
-          class="tablinks"
-          onclick="openYear(event, '1960s')"
-          id="defaultOpen"
-        >
-          1960s
-        </button>
-        <button class="tablinks" onclick="openYear(event, '1970s')">
-          1970s
-        </button>
-        <button class="tablinks" onclick="openYear(event, '1980s')">
-          1980s
-        </button>
-      </div>
 
-      <div id="1960s" class="tabcontent2">
-        <h3>1960s</h3>
+    <section>
+      <div class="container" style="width:70%">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
-          erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
-          mauris magna vel quam. Maecenas sit amet viverra lacus, ac auctor dui.
-          Maecenas varius nibh quis nisl vestibulum placerat.
+          <b>Andy Wahol</b>
+          was an American artist, film director, and producer who was a leading
+          figure in the visual art movement which is alsoknown as pop art. His
+          works explore the relationship between artistic expression,
+          advertising, and celebrity culture that flourished by the 1960s, and
+          span a variety of media, including painting, silkscreening,
+          photography, film, and sculpture.
+          <br />
+          <br />
+          <b>
+            Click on the following accordion with its name to view its
+            respective content:
+          </b>
         </p>
-      </div>
+        <div class="container">
+          <button class="accordion">Particulars</button>
+          <div class="panel">
+            <div style="width:30%; float:right">
+              <img
+                src="https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2FAndy_Warhol_1975.jpg?v=1604457619454"
+                style="width:80%; height:auto; vertical-align:middle; padding:10px"
+              />
+            </div>
+            <div style="width:70%; float:left">
+              <p>
+                <b style="font-size:24px">Andy Warhol</b><br />
+                American Artist, Film Director & Producer
+              </p>
+              <p>
+                <b>Born: </b>
+                August 6, 1928 Pittsburgh, Pennsylvania, U.S. (Andrew
+                Warhola)<br />
+                <b>Died: </b>
+                February 22, 1987 (aged 58) New York City, U.S.<br />
+                <b>Education: </b>
+                Carnegie Institute of Technology (Carnegie Mellon University)<br />
+                <b>Known for </b>
+                Printmaking, painting, cinema, photography<br />
+                <b>Movement:</b>
+                Pop Art
+              </p>
+            </div>
+          </div>
+          <button class="accordion">Timeline</button>
+          <div class="panel">
+            <p>
+              <b>1970s</b><br />
+              Compared to the success and scandal of Warhol's work in the 1960s,
+              the 1970s were a much quieter decade, as he became more
+              entrepreneurial. According to Bob Colacello, Warhol devoted much
+              of his time to rounding up new, rich patrons for portrait
+              commissions. Warhol's famous portrait of Chinese Communist leader
+              Mao Zedong was created in 1973. He also founded, with Gerard
+              Malanga, Interview magazine, and published The Philosophy of Andy
+              Warhol (1975). An idea expressed in the book: "Making money is
+              art, and working is art and good business is the best art." Warhol
+              socialized at various nightspots in New York City, including Max's
+              Kansas City and, later in the 1970s, Studio 54. He was generally
+              regarded as quiet, shy, and a meticulous observer. Art critic
+              Robert Hughes called him "the white mole of Union Square." In
+              1979, along with his longtime friend Stuart Pivar, Warhol founded
+              the New York Academy of Art.
+            </p>
+          </div>
 
-      <div id="1970s" class="tabcontent2">
-        <h3>1970s</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
-          erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
-          mauris magna vel quam. Maecenas sit amet viverra lacus, ac auctor dui.
-          Maecenas varius nibh quis nisl vestibulum placerat.
-        </p>
+          <button class="accordion">Art Styles</button>
+          <div class="panel">
+            <p>
+              <b>Pop Art</b>
+              <br /><br />
+              By the beginning of the 1960s, pop art was an experimental form
+              that several artists were independently adopting; some of these
+              pioneers, such as Roy Lichtenstein, would later become synonymous
+              with the movement. Warhol, who would become famous as the "Pope of
+              Pop", turned to this new style, where popular subjects could be
+              part of the artist's palette. His early paintings show images
+              taken from cartoons and advertisements, hand-painted with paint
+              drips. Marilyn Monroe was a pop art painting that Warhol had done
+              and it was very popular. Those drips emulated the style of
+              successful abstract expressionists (such as Willem de Kooning).
+              Warhol's first pop art paintings were displayed in April 1961,
+              serving as the backdrop for New York Department Store Bonwit
+              Teller's window display. This was the same stage his Pop Art
+              contemporaries Jasper Johns, James Rosenquist and Robert
+              Rauschenberg had also once graced.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
+    <br />
+    <div class="clearfix"></div>
 
-      <div id="1980s" class="tabcontent2">
-        <h3>1980s</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
-          erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
-          mauris magna vel quam. Maecenas sit amet viverra lacus, ac auctor dui.
-          Maecenas varius nibh quis nisl vestibulum placerat.
-        </p>
-      </div>
+    <!--
+    <div class="tab">
+      <button
+        class="tablinks"
+        onclick="openYear(event, '1960s')"
+        id="defaultOpen"
+      >
+        1960s
+      </button>
+      <button class="tablinks" onclick="openYear(event, '1970s')">
+        1970s
+      </button>
+      <button class="tablinks" onclick="openYear(event, '1980s')">
+        1980s
+      </button>
     </div>
 
+    <div id="1960s" class="tabcontent2">
+      <h3>1960s</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
+        erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis mauris
+        magna vel quam. Maecenas sit amet viverra lacus, ac auctor dui. Maecenas
+        varius nibh quis nisl vestibulum placerat.
+      </p>
+    </div>
+
+    <div id="1970s" class="tabcontent2">
+      <h3>1970s</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
+        erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis mauris
+        magna vel quam. Maecenas sit amet viverra lacus, ac auctor dui. Maecenas
+        varius nibh quis nisl vestibulum placerat.
+      </p>
+    </div>
+
+    <div id="1980s" class="tabcontent2">
+      <h3>1980s</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
+        erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis mauris
+        magna vel quam. Maecenas sit amet viverra lacus, ac auctor dui. Maecenas
+        varius nibh quis nisl vestibulum placerat.
+      </p>
+    </div>
+
+-->
+
     <!-- FOOTER START -->
-    <br />
     <footer class="footer">
-      <div class="row">
+      <div class="container">
         <div class="column-footer1">
           <p>
-            <i class="fa fa-globe fa-lg"></i><b> About the Website</b>
+            <i class="fa fa-globe fa-lg"></i><b> ABOUT THE WEBSITE</b>
             <br />
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
-            erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
-            mauris magna vel quam.
-            <a href="/acknowledgement.html">ACKNOWLEGEMENT</a>
+            ANDY WARHOL TRIBUTE is the website dedicated to showcase Andy's
+            Artwork.<br />
+            We are NOT affiliated with the artist himself or his team.
           </p>
         </div>
         <div class="column-footer2">
           <p>
-            <b>Follow Us!</b>
+            <b>ACKNOWLEGEMENT</b>
             <br />
             <br />
-            <i class="fa fa-facebook-square"></i>
-            <i class="fa fa-twitter-square"></i>
+            <a href="/acknowledgement.html#Images">IMAGES</a><br />
+            <a href="/acknowledgement.html#Info">INFORMATION/ARTICLES</a>
           </p>
         </div>
-      </div>
-      <div class="row">
+        <div class="column-footer3">
+          <p>
+            <b>FOLLOW US!</b>
+            <br />
+            <br />
+            <a href="#"><i class="fa fa-facebook-square"></i> Facebook</a><br />
+            <a href="#"><i class="fa fa-twitter-square"></i> Twitter</a>
+          </p>
+        </div>
+
+        <div class="clearfix"></div>
         <h2>ANDY WARHOL TRIBUTE</h2>
         <h6>Created in November 2020</h6>
       </div>

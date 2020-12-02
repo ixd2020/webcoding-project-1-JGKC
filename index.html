@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="UaGIN7-O6j9GmYiA4se5mPk8ocNHVkRuIw0Vs5Q83QY" />
 
     <title>Home | Andy Warhol Tribute</title>
 
@@ -16,6 +17,11 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="/Navigation.js" defer></script>
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=ee298ef23e7fd7634"
+    ></script>
 
     <!-- import the icons from font awesome -->
     <link
@@ -30,23 +36,42 @@
     />
   </head>
   <body>
+    
     <!-- TOP NAVIGATION START -->
     <header class="header">
       <center><b>ANDY WARHOL TRIBUTE</b></center>
     </header>
-    <nav class="topnav">
-      <a href="/index.html"><i class="fa fa-home fa-lg"></i> HOME</a>
+    <nav class="topnav" id="topnav">
+      <a href="/index.html" class="active"
+        ><i class="fa fa-home fa-lg"></i> HOME</a
+      >
       <a href="/about.html"><i class="fa fa-user fa-lg"></i> BIOGRAPHY</a>
       <a href="/artwork.html"><i class="fa fa-image fa-lg"></i> ARTWORK</a>
       <a href="/community.html"><i class="fa fa-users fa-lg"></i> COMMUNITY</a>
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search" />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+      <!-- LOGO ONLY -->
+      <a href="/index.html" class="active icon">
+        <i class="fa fa-home fa-lg"></i>
+      </a>
+      <a href="/about.html" class="icon">
+        <i class="fa fa-user fa-lg"></i>
+      </a>
+      <a href="/artwork.html" class="icon">
+        <i class="fa fa-image fa-lg"></i>
+      </a>
+      <a href="/community.html" class="icon">
+        <i class="fa fa-users fa-lg"></i>
+      </a>
+      <!-- SEARCH -->
+      <a style="float: right;" onclick="Search()" class="search">
+        <i class="fa fa-search fa-lg" id="SearchButton"></i>
+      </a>
+      <div class="search-container" id="search">
+        <div class="clearfix"></div>
+        <div class="gcse-search"></div>
       </div>
     </nav>
     <!-- TOP NAVIGATION END -->
+
     <!-- HERO IMAGE START -->
     <div class="hero-image-index">
       <div class="hero-text">
@@ -59,12 +84,15 @@
       </div>
     </div>
     <!-- HERO IMAGE END -->
-    <!-- MEATBALL MENU START -->
-    <center>
-      <h2>GET STARTED</h2>
-      <p>Start exploing the Website to know about <b>Andy Warhol</b>.</p>
-      <br />
-      <div class="meatball-menu">
+    
+    <!-- GETTING STARTED CARDS -->
+    <section>
+      <center>
+        <h2>GET STARTED</h2>
+        <p>Start exploing the Website to know about <b>Andy Warhol</b>.</p>
+        <br />
+      </center>
+      <div class="container">
         <div class="column-3">
           <!-- BIOGRAPHY CARD START-->
           <div class="card">
@@ -73,7 +101,7 @@
                 <div class="card-text">
                   <i class="fa fa-user fa-lg"></i><b> BIOGRAPHY</b>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Learn more about Andy Warhol
                   </p>
                 </div>
               </div>
@@ -89,7 +117,7 @@
                 <div class="card-text">
                   <i class="fa fa-image fa-lg"></i><b> ARTWORK</b>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Understand Andy Warhol's Artworks
                   </p>
                 </div>
               </div>
@@ -105,7 +133,7 @@
                 <div class="card-text">
                   <i class="fa fa-users fa-lg"></i><b> COMMUNITY</b>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Join the AWT Community as one
                   </p>
                 </div>
               </div>
@@ -113,36 +141,43 @@
           </div>
         </div>
       </div>
-    </center>
+      <div class="clearfix"></div>
+    </section>
     <!-- COMMUNITY CARD END -->
-    <!-- MEATBALL MENU END -->
+
     <!-- FOOTER START -->
-    <br />
     <footer class="footer">
-      <div class="row">
+      <div class="container">
         <div class="column-footer1">
           <p>
-            <i class="fa fa-globe fa-lg"></i><b> About the Website</b>
+            <i class="fa fa-globe fa-lg"></i><b> ABOUT THE WEBSITE</b>
             <br />
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
-            erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
-            mauris magna vel quam.<a href="/acknowledgement.html"
-              >ACKNOWLEGEMENT</a
-            >
+            ANDY WARHOL TRIBUTE is the website dedicated to showcase Andy's
+            Artwork.<br />
+            We are NOT affiliated with the artist himself or his team.
           </p>
         </div>
         <div class="column-footer2">
           <p>
-            <b>Follow Us!</b>
+            <b>ACKNOWLEGEMENT</b>
             <br />
             <br />
-            <i class="fa fa-facebook-square"></i>
-            <i class="fa fa-twitter-square"></i>
+            <a href="/acknowledgement.html#Images">IMAGES</a><br />
+            <a href="/acknowledgement.html#Info">INFORMATION/ARTICLES</a>
           </p>
         </div>
-      </div>
-      <div class="row">
+        <div class="column-footer3">
+          <p>
+            <b>FOLLOW US!</b>
+            <br />
+            <br />
+            <a href="#"><i class="fa fa-facebook-square"></i> Facebook</a><br />
+            <a href="#"><i class="fa fa-twitter-square"></i> Twitter</a>
+          </p>
+        </div>
+
+        <div class="clearfix"></div>
         <h2>ANDY WARHOL TRIBUTE</h2>
         <h6>Created in November 2020</h6>
       </div>

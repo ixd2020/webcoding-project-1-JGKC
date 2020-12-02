@@ -1,8 +1,22 @@
 /* CSS files add styling rules to your content */
 * {
   font-family: 'Overpass', sans-serif;
+  box-sizing: border-box;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Defualt Container */
+.container {
+  margin:auto;
+  width: 90%;
+}
+
+/* Typography */
 h1 {
   font-weight: bold;
   font-size: 48px;
@@ -11,7 +25,12 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  margin:2em;
+  margin: 2em;
+}
+
+h3 {
+  font-weight: bold;
+  margin: 2em;
 }
 
 p {
@@ -19,28 +38,45 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 
-body,html {
+body,html{
   margin: 0;
   height: 100%;
 }
 
-table, th, td {
-  border: 1px solid black
+/* Table of Contents */
+.content-box {
+  margin:2em;
+  border: 1px solid black;
+  width: 400px;
+  padding:10px
+}
+
+.content-list1 {
+  width:100%;
+  margin:1em;
+}
+
+@media screen and (max-width: 500px) {
+  .content-box {
+    width: auto;
+    display: block;
+  }
+}
+
+/* Columns */
+
+
+@media screen and (max-width: 800px) {
+  .column-3 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 
 
 
-
-
-
-
-/* ------ MEATBALL MENU START ----- */
-.meatball-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 .column-2 {
   float: left;
@@ -50,25 +86,13 @@ table, th, td {
 
 .column-3 {
   float: left;
-  width: 30%;
+  width: 33.33%;
   padding: 0px 10px;
 }
 
-.row {
-  margin: 0 -5px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column-3 {
+@media screen and (max-width: 900px) {
+  .column-2 .column-3 {
     width: 100%;
-    display: block;
-    margin-bottom: 20px;
   }
 }
 

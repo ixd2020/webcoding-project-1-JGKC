@@ -16,6 +16,11 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="/Navigation.js" defer></script>
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=ee298ef23e7fd7634"
+    ></script>
 
     <!-- import the icons from font awesome -->
     <link
@@ -34,19 +39,37 @@
     <header class="header">
       <center><b>ANDY WARHOL TRIBUTE</b></center>
     </header>
-    <nav class="topnav">
+    <nav class="topnav" id="topnav">
       <a href="/index.html"><i class="fa fa-home fa-lg"></i> HOME</a>
       <a href="/about.html"><i class="fa fa-user fa-lg"></i> BIOGRAPHY</a>
-      <a href="/artwork.html"><i class="fa fa-image fa-lg"></i> ARTWORK</a>
+      <a href="/artwork.html" class="active"
+        ><i class="fa fa-image fa-lg"></i> ARTWORK</a
+      >
       <a href="/community.html"><i class="fa fa-users fa-lg"></i> COMMUNITY</a>
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search" />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+      <!-- LOGO ONLY -->
+      <a href="/index.html" class="icon">
+        <i class="fa fa-home fa-lg"></i>
+      </a>
+      <a href="/about.html" class="icon">
+        <i class="fa fa-user fa-lg"></i>
+      </a>
+      <a href="/artwork.html" class="active icon">
+        <i class="fa fa-image fa-lg"></i>
+      </a>
+      <a href="/community.html" class="icon">
+        <i class="fa fa-users fa-lg"></i>
+      </a>
+      <!-- SEARCH -->
+      <a style="float: right;" onclick="Search()" class="search">
+        <i class="fa fa-search fa-lg" id="SearchButton"></i>
+      </a>
+      <div class="search-container" id="search">
+        <div class="clearfix"></div>
+        <div class="gcse-search"></div>
       </div>
     </nav>
     <!-- TOP NAVIGATION END -->
+
     <!-- HERO IMAGE START -->
     <div class="hero-image-artwork">
       <div class="hero-text">
@@ -57,114 +80,154 @@
       </div>
     </div>
     <!-- HERO IMAGE END -->
-
-    <!-- Andy Warhol - Campbell's Soup Cans -->
-
-    <h2>CLICK</h2>
-    <hr>
-    <!-- INDEX: C -->
-    <h2 id="Index-C">C</h2>
-    <div class="meatball-menu">
-      <div class="column-3">
-         <!-- Andy Warhol - Campbell's Soup Cans -->
+    <!-- ART CARDS START-->
+    <section>
+      <br />
+      <div class="container">
+        <!-- Andy Warhol - Campbell's Soup Cans -->
         <div class="artcard">
-          <a href="/campbell.html">
-            <img
-              style="display: block;"
-              src="https://live.staticflickr.com/1128/562288842_4317a25b67_b.jpg"
-              alt="NYC - MoMA: Andy Warhol's Campbell's Soup Cans"
-            />
-            <div class="artcard-title">
-              Campbell's Soup Cans
-            </div>
-            <p class="card-text">
-              Vestibulum eleifend vestibulum sapien id efficitur. In bibendum
-              justo vitae risus varius interdum ut a sem. Proin ante dui,
-              euismod sed blandit sed, dictum id lorem.
-            </p>
-          </a>
+          <img
+            style="display: block;"
+            src="https://live.staticflickr.com/1128/562288842_4317a25b67_b.jpg"
+            alt="NYC - MoMA: Andy Warhol's Campbell's Soup Cans"
+          />
+          <div class="artcard-year">1962</div>
+          <div class="artcard-title">Campbell's Soup Cans</div>
+          <div class="artcard-text">
+            Vestibulum eleifend vestibulum sapien id efficitur. In bibendum
+            justo vitae risus varius interdum ut a sem.
+            <br /><br />
+            <a class="LearnMore" href="/Artwork/campbell.html">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Andy Warhol - Mao -->
+        <div class="artcard">
+          <img
+            style="display: block;"
+            src="https://live.staticflickr.com/31/96727458_434393623a_b.jpg"
+            alt="Mao by Andy Warhol"
+          />
+          <div class="artcard-year">1972</div>
+          <div class="artcard-title">Mao</div>
+          <div class="artcard-text">
+            Vestibulum eleifend vestibulum sapien id efficitur. In bibendum
+            justo vitae risus varius interdum ut a sem.
+            <br /><br />
+            <a class="LearnMore" href="/Artwork/mao.html">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Andy Warhol - Marilyn Monrone -->
+        <div class="artcard">
+          <img
+            style="display: block;"
+            src="https://live.staticflickr.com/373/19379279042_8932b4605f_b.jpg"
+            alt="Marilyn Monroe by Andy Warhol"
+          />
+          <div class="artcard-year">1962</div>
+          <div class="artcard-title">Marilyn Monroe</div>
+          <div class="artcard-text">
+            Vestibulum eleifend vestibulum sapien id efficitur. In bibendum
+            justo vitae risus varius interdum ut a sem.
+            <br /><br />
+            <a class="LearnMore" href="/Artwork/marilyn.html">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Andy Warhol - Marilyn Monrone -->
+        <div class="artcard">
+          <img
+            style="display: block;"
+            src="https://live.staticflickr.com/373/19379279042_8932b4605f_b.jpg"
+            alt="Marilyn Monroe by Andy Warhol"
+          />
+          <div class="artcard-year">1962</div>
+          <div class="artcard-title">PLACEHOLDER</div>
+          <div class="artcard-text">
+            Vestibulum eleifend vestibulum sapien id efficitur. In bibendum
+            justo vitae risus varius interdum ut a sem.
+
+            <br /><br />
+            <a class="LearnMore" href="/marilyn.html">Learn More</a>
+          </div>
+        </div>
+        <!-- Andy Warhol - Marilyn Monrone -->
+        <div class="artcard">
+          <img
+            style="display: block;"
+            src="https://live.staticflickr.com/373/19379279042_8932b4605f_b.jpg"
+            alt="Marilyn Monroe by Andy Warhol"
+          />
+          <div class="artcard-year">1962</div>
+          <div class="artcard-title">PLACEHOLDER</div>
+          <div class="artcard-text">
+            Vestibulum eleifend vestibulum sapien id efficitur. In bibendum
+            justo vitae risus varius interdum ut a sem. Proin ante dui, euismod
+            sed blandit sed, dictum id lorem.
+          </div>
+          <a class="LearnMore" href="/marilyn.html">Learn More</a>
+        </div>
+
+        <!-- Andy Warhol - Marilyn Monrone -->
+        <div class="artcard">
+          <img
+            style="display: block;"
+            src="https://live.staticflickr.com/373/19379279042_8932b4605f_b.jpg"
+            alt="Marilyn Monroe by Andy Warhol"
+          />
+          <div class="artcard-year">1962</div>
+          <div class="artcard-title">PLACEHOLDER</div>
+          <div class="artcard-text">
+            Vestibulum eleifend vestibulum sapien id efficitur. In bibendum
+            justo vitae risus varius interdum ut a sem. Proin ante dui, euismod
+            sed blandit sed, dictum id lorem.
+          </div>
+          <a class="LearnMore" href="/marilyn.html">Learn More</a>
         </div>
       </div>
-    </div>
-    <hr>
-    <!-- INDEX: M -->
-    <h2 id="Index-M">M</h2>
-    <div class="meatball-menu">
-          <div class="column-3">
-            <!-- Andy Warhol - Mao -->
-        <div class="artcard">
-          <a href="/mao.html">
-            <img
-      style="display: block;"
-      src="https://live.staticflickr.com/31/96727458_434393623a_b.jpg"
-      alt="Mao by Andy Warhol"
-    />
-            <div class="artcard-title">
-              Mao
-            </div>
-            <p class="card-text">
-              Vestibulum eleifend vestibulum sapien id efficitur. In bibendum
-              justo vitae risus varius interdum ut a sem. Proin ante dui,
-              euismod sed blandit sed, dictum id lorem.
-            </p>
-          </a>
-        </div>
-      </div>
 
-      <div class="column-3">
-         <!-- Andy Warhol - Marilyn Monrone -->
-        <div class="artcard">
-          <a href="/marilyn.html">
-            <img
-              style="display: block;"
-              src="https://live.staticflickr.com/373/19379279042_8932b4605f_b.jpg"
-              alt="Marilyn Monroe by Andy Warhol"
-            />
-            <div class="artcard-title">
-              Marilyn Monroe
-            </div>
-            <p class="card-text">
-              Vestibulum eleifend vestibulum sapien id efficitur. In bibendum
-              justo vitae risus varius interdum ut a sem. Proin ante dui,
-              euismod sed blandit sed, dictum id lorem.
-            </p>
-          </a>
-        </div>
-      </div>
-    </div>
-
+      <div class="clearfix"></div>
+    </section>
+    <!-- ART CARDS END-->
 
     <!-- FOOTER START -->
-    <br />
     <footer class="footer">
-      <div class="row">
+      <div class="container">
         <div class="column-footer1">
           <p>
-            <i class="fa fa-globe fa-lg"></i><b> About the Website</b>
+            <i class="fa fa-globe fa-lg"></i><b> ABOUT THE WEBSITE</b>
             <br />
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius,
-            erat ut vulputate gravida, felis arcu laoreet lacus, ac venenatis
-            mauris magna vel quam.<a href="/acknowledgement.html"
-              >ACKNOWLEGEMENT</a
-            >
+            ANDY WARHOL TRIBUTE is the website dedicated to showcase Andy's
+            Artwork.<br />
+            We are NOT affiliated with the artist himself or his team.
           </p>
         </div>
         <div class="column-footer2">
           <p>
-            <b>Follow Us!</b>
+            <b>ACKNOWLEGEMENT</b>
             <br />
             <br />
-            <i class="fa fa-facebook-square"></i>
-            <i class="fa fa-twitter-square"></i>
+            <a href="/acknowledgement.html#Images">IMAGES</a><br />
+            <a href="/acknowledgement.html#Info">INFORMATION/ARTICLES</a>
           </p>
         </div>
-      </div>
-      <div class="row">
+        <div class="column-footer3">
+          <p>
+            <b>FOLLOW US!</b>
+            <br />
+            <br />
+            <a href="#"><i class="fa fa-facebook-square"></i> Facebook</a><br />
+            <a href="#"><i class="fa fa-twitter-square"></i> Twitter</a>
+          </p>
+        </div>
+
+        <div class="clearfix"></div>
         <h2>ANDY WARHOL TRIBUTE</h2>
         <h6>Created in November 2020</h6>
       </div>
     </footer>
+    <!-- FOOTER END -->
   </body>
-  <!-- FOOTER END -->
 </html>

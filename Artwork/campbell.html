@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Community Login | Andy Warhol Tribute</title>
+    <title>Campbell's Soup Cans | Andy Warhol Tribute</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/Navigation.css" />
     <link rel="stylesheet" href="/HeroImages.css" />
+    <link rel="stylesheet" href="/ArtCard.css" />
     <link rel="stylesheet" href="/Footer.css" />
 
     <!-- import the webpage's javascript file -->
@@ -39,23 +40,21 @@
       <center><b>ANDY WARHOL TRIBUTE</b></center>
     </header>
     <nav class="topnav" id="topnav">
-      <a href="/index.html"
-        ><i class="fa fa-home fa-lg"></i> HOME</a
-      >
+      <a href="/index.html"><i class="fa fa-home fa-lg"></i> HOME</a>
       <a href="/about.html"><i class="fa fa-user fa-lg"></i> BIOGRAPHY</a>
-      <a href="/artwork.html"><i class="fa fa-image fa-lg"></i> ARTWORK</a>
-      <a href="/community.html" class="active"><i class="fa fa-users fa-lg"></i> COMMUNITY</a>
+      <a href="/artwork.html" class="active"><i class="fa fa-image fa-lg"></i> ARTWORK</a>
+      <a href="/community.html"><i class="fa fa-users fa-lg"></i> COMMUNITY</a>
       <!-- LOGO ONLY -->
-      <a href="/index.html" class="icon">
+      <a href="/index.html" class=" icon">
         <i class="fa fa-home fa-lg"></i>
       </a>
       <a href="/about.html" class="icon">
         <i class="fa fa-user fa-lg"></i>
       </a>
-      <a href="/artwork.html" class="icon">
+      <a href="/artwork.html" class="active icon">
         <i class="fa fa-image fa-lg"></i>
       </a>
-      <a href="/community.html" class="active icon">
+      <a href="/community.html" class="icon">
         <i class="fa fa-users fa-lg"></i>
       </a>
       <!-- SEARCH -->
@@ -68,108 +67,50 @@
       </div>
     </nav>
     <!-- TOP NAVIGATION END -->
-    
+
     <!-- HERO IMAGE START -->
-    <div class="hero-image-community">
+    <div class="hero-image-campbell">
       <div class="hero-text">
-        <h1>COMMUNITY</h1>
-        <p>
-          Join the Andy Warhol Community!<br />
-          Sign Up now to discuss about Andy Warhol's Artwork on our Community
-          Page!
-        </p>
+        <h1>CAMBELL'S SOUP CANS</h1>
+        YEAR PAINTED: 1962
       </div>
     </div>
     <!-- HERO IMAGE END -->
-    
-    <!-- TAB START -->
-    <section>
-      <button
-        class="tablink"
-        onclick="openPage('LogIn', this, '#ddd')"
-        id="defaultOpen"
-      >
-        LOG IN
-      </button>
-      <button class="tablink" onclick="openPage('SignUp', this, '#ddd')">
-        SIGN UP
-      </button>
-      <!-- LOGIN -->
-      <div id="LogIn" class="tabcontent">
-        <div class="formbox">
-          <h3>LOG IN</h3>
-          <div class="InputDetails">
-            <form action="/action_page.php">
-              <label for="fname">Username</label><br />
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Username"
-              /><br />
-
-              <label for="lname">Password</label><br />
-              <input
-                type="Password"
-                id="Password"
-                name="Password"
-                placeholder="Password"
-              /><br />
-
-              <input type="submit" value="Log In" />
-            </form>
-          </div>
-        </div>
+    <article>
+      <div class="content-right">
+        <table class="details">
+          <th colspan="2">
+            Details
+          </th>
+          <tr>
+            <th>Year Painted</th>
+            <td>1962</td>
+          </tr>
+          <tr>
+            <th>Dimension</th>
+            <td>20 by 16 inches (51 cm × 41 cm) each for 32 canvas</td>
+          </tr>
+        </table>
       </div>
-
-      <!-- LOGIN END -->
-      <!-- SIGNUP START -->
-      <div id="SignUp" class="tabcontent">
-        <div class="formbox">
-          <h3>SIGN UP</h3>
-          <div class="InputDetails">
-            <form action="/action_page.php">
-              <label for="fname">Email</label><br />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-              /><br />
-
-              <label for="fname">Username</label><br />
-              <input
-                type="text"
-                id="newusername"
-                name="username"
-                placeholder="Username"
-              /><br />
-
-              <label for="lname">Password</label><br />
-              <input
-                type="Password"
-                id="newPassword"
-                name="Password"
-                placeholder="Password"
-              /><br />
-
-              <input type="checkbox" id="news" name="news" value="Bike" />
-              <label for="news"> I would like to recieve Newsletter.</label
-              ><br />
-
-              <input type="radio" id="vehicle1" name="vehicle1" value="Bike" />
-              <label for="vehicle1">
-                I agree with the <a href="">Terms & Conditions</a>.</label
-              ><br /><br />
-
-              <input type="submit" value="Sign Up" />
-            </form>
-          </div>
-        </div>
+      <div class="content-left">
+        <h2>About CAMBELL'S SOUP CANS</h2>
+        <p>
+          Campbell's Soup Cans, which is sometimes referred to as 32 Campbell's
+          Soup Cans, is a work of art produced between November 1961 and March
+          or April 1962 by Andy Warhol. It consists of thirty-two canvases, each
+          measuring 20 inches (51 cm) in height × 16 inches (41 cm) in width and
+          each consisting of a painting of a Campbell's Soup can—one of each of
+          the canned soup varieties the company offered at the time. The
+          individual paintings were produced by a printmaking method—the
+          semi-mechanized screen printing process, using a non-painterly style.
+          Campbell's Soup Cans' reliance on themes from popular culture helped
+          to usher in pop art as a major art movement in the United States.
+        </p>
       </div>
-    </section>
-    <!-- SIGNUP END -->
-    <!-- TAB END -->
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SdbOrNLcC0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="clearfix"></div>
+    </article>
 
     <!-- FOOTER START -->
     <footer class="footer">

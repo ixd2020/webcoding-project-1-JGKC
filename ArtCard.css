@@ -1,84 +1,87 @@
 .artcard {
+  padding: 10px;
   overflow: hidden;
-  width: 100%;
+  width: 33.33%;
   height: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
 }
 
 .artcard img {
-  display: block;
-  float: center;
   height: 50%;
   width: 100%;
 }
 
-.artcard a {
-  display: block;
-  color: black;
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
-}
+.artcard-year {
+  font-family: "Overpass", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: baseline;
 
-.artcard :hover {
-  background-color: #ddd;
-  color: black;
-}
-
-@keyframes pop {
-  0% {
-    color: black;
-  }
-  12.5% {
-    color: #ff0000;
-  }
-  25% {
-    color: #ffa500;
-  }
-  37.5% {
-    color: #ffff00;
-  }
-  50% {
-    color: #00ff00;
-  }
-  62.5% {
-    color: #0000ff;
-  }
-  75% {
-    color: #4b0082;
-  }
-  87.5% {
-    color: #ee82ee;
-  }
-  100% {
-    color: black;
-  }
+  border-radius: 2px;
+  border: 1px Solid #333;
+  color: #333;
+  padding: 5px 5px 2px 5px;
+  margin: 10px 0px 0px 10px;
+  float: left;
 }
 
 .artcard-title {
   font-family: "Overpass", sans-serif;
   font-weight: bold;
   font-size: 24px;
-  padding: 10px;
+  padding: 5px;
+  margin-left: 50px;
+  margin-top: 5px;
 }
 
 .artcard-text {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
+  font-size: 16px;
+  padding: 10px;
   width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin-left: 5px;
 }
 
+.LearnMore {
+  border-radius: 5px;
+  border: 1px Solid #ddd;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.LearnMore:hover {
+  border: 1px Solid red;
+  background-color: red;
+  color: white;
+}
+
+/* Content */
 .content-left {
   float: left;
-  width: 60%;
-  height: 500px;
+  width: 70%;
   margin-bottom: 20px;
 }
 
 .content-right {
-  float: left;
-  width: 40%;
-  height: 500px;
+  float: right;
+  width: 30%;
   margin-bottom: 20px;
-  
+}
+
+
+@media screen and (max-width: 800px) {
+  .artcard .content-left .content-right{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }

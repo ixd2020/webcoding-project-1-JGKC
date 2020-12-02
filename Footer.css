@@ -7,12 +7,46 @@
   padding: 50px 25px;
 }
 
+.footer a {
+  text-decoration: none;
+  color:#aaa;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer a:active {
+  text-decoration: underline;
+  color: yellow;
+}
+
 .column-footer1 {
   float: left;
-  width: 70%;
+  width: 55%;
+  text-align: left;
 }
 
 .column-footer2 {
   float: left;
-  width: 30%;
+  width: 25%;
+  text-align: left;
+}
+
+.column-footer3 {
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+  .column-footer1 {
+    width: 95%;
+  }
+  .column-footer2 {
+    width: 60%; 
+  }
+  .column-footer3 {
+    width: 40%; 
+  }
 }

@@ -2,7 +2,7 @@
 .hero-image-index {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2FAndy%20Camera.jpg?v=1604811880686");
-  height: 50%;
+  height: 80%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,6 +16,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+/* ------ ABOUT.html HERO IMAGE ----- */
+.hero-image-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2FAndy%20Camera.jpg?v=1604811880686");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* ------ COMMNUNITY.html HERO IMAGE ----- */
