@@ -62,10 +62,32 @@
   position: relative;
 }
 
-/* ------ CAMPBELL.html HERO IMAGE ----- */
+/* ------ ARTWORK/CAMPBELL.html HERO IMAGE ----- */
 .hero-image-campbell {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://cdn.glitch.com/10233166-16c2-457c-84e4-1aacbdaed0de%2FCampbell%20Soup.jpg?v=1604829724252");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ------ ARTWORK/MAO.html HERO IMAGE ----- */
+.hero-image-mao {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://live.staticflickr.com/31/96727458_434393623a_b.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ------ ARTWORK/MARILYN.html HERO IMAGE ----- */
+.hero-image-marilyn {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://live.staticflickr.com/373/19379279042_8932b4605f_b.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;

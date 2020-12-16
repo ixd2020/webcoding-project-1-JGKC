@@ -1,7 +1,3 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
-
-
 
 // COMMUNITY.html - TABS
 function openPage(pageName,elmnt,color) {
@@ -17,27 +13,9 @@ function openPage(pageName,elmnt,color) {
   document.getElementById(pageName).style.display = "block";
   elmnt.style.backgroundColor = color;
 }
-//  document.getElementById("defaultOpen").click();
+  document.getElementById("defaultOpen").click();
 
-
-// ABOUT.html - TABS
-//function openYear(evt, Year) {
-//  var i, tabcontent2, tablinks;
-//  tabcontent2 = document.getElementsByClassName("tabcontent2");
-//  for (i = 0; i < tabcontent2.length; i++) {
-//    tabcontent2[i].style.display = "none";
-//  }
-//  tablinks = document.getElementsByClassName("tablinks");
-//  for (i = 0; i < tablinks.length; i++) {
-//    tablinks[i].className = tablinks[i].className.replace(" active", "");
-//  }
-//  document.getElementById(Year).style.display = "block";
-//  evt.currentTarget.className += " active";
-//}
-
-
-
-
+// Navigation
 function menu() {
   var x = document.getElementById("Navbar");
   if (x.className === "topnav") {
@@ -46,9 +24,6 @@ function menu() {
     x.className = "topnav";
   }
 }
-
-
-
 
 // Search
 function Search() {

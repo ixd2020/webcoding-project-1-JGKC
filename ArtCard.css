@@ -1,3 +1,4 @@
+/* ------ CARDS ----- */
 .artcard {
   padding: 10px;
   overflow: hidden;
@@ -64,24 +65,48 @@
   color: white;
 }
 
-/* Content */
-.content-left {
+
+@media screen and (max-width: 1100px) {
+  .artcard {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .artcard {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* ------ CONTENTS ----- */
+.article {
   float: left;
   width: 70%;
   margin-bottom: 20px;
 }
 
-.content-right {
+.infobox {
   float: right;
   width: 30%;
-  margin-bottom: 20px;
 }
 
+.infobox table {
+  margin: 2em 0px;
+  border: 1px solid black;
+}
+
+.infobox td, th {
+  border: 1px solid black;
+  padding: 10px;
+}
 
 @media screen and (max-width: 800px) {
-  .artcard .content-left .content-right{
+  .article .infobox {
     width: 100%;
-    display: block;
-    margin-bottom: 20px;
   }
 }

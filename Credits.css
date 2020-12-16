@@ -1,3 +1,4 @@
+/* ------ TABLE OF CONTENTS ----- */
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -7,7 +8,7 @@ table {
   margin:2em;
 }
 
-
+/* ------ CARDS ----- */
 .creditscard img {
   height: 200px;
   width: 100%;
